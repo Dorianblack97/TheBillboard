@@ -1,0 +1,8 @@
+﻿@model int
+@{
+    ViewData["Title"] = "Message deletion";
+}
+<div class="text-center">
+    <h1 class="display-4">Message number @Model deleted</h1>
+    @Html.ActionLink("Home", "Index", "Messages", default, new { @class = "btn btn-outline-secondary w-25" })
+</div>
