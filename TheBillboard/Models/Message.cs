@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace TheBillboard.Models
 {
-    public record Message(string Text, string Title, string Author, DateTime Created, DateTime Updated, int? Id = default)
+    public record Message(string Body, string Title, string Author, DateTime Created, DateTime Updated, int? Id = default)
     {
     }
 }

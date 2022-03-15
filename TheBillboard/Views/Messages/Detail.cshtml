@@ -9,7 +9,7 @@
             <div class="card-body">
                 <h5 class="card-title">Id Message: @Model.Id</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Create on: @Model.Created</h6>
-                <p class="card-text">Text: @Model.Text</p>
+                <p class="card-text">Text: @Model.Body</p>
             </div>
         </div>
         @Html.ActionLink("Home", "Index", "Messages", default, new { @class = "btn btn-outline-secondary w-25", style = "margin: 5px" })

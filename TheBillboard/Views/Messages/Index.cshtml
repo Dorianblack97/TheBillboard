@@ -2,17 +2,8 @@
 @{
     ViewData["Title"] = "Messages";
 }
-<div class="text-center">
+<div class="text-center" style="align-content: center">
     <h1 class="display-4">@ViewData["Title"]</h1>
-
-    <form asp-action="Create" asp-controller="Messages" method="post">
-        <div class="form-group">
-            <label for="message-body">Message</label>
-            <input type="text" class="form-control" id="message-body" name="message-body" placeholder="Enter message">
-            <input type="submit" value="Send" class="btn btn-primary" />
-        </div>
-    </form>
-
     <ul class="list-group list-group-flush">
         @foreach (var message in Model)
         {
@@ -21,7 +12,7 @@
                     <div class="card-body">
                         <h5 class="card-title">@Html.ActionLink(message.Title, "Detail", "Messages", new { id = message.Id })</h5>
                         <h6 class="card-subtitle mb-2 text-muted">@message.Author</h6>
-                        <p class="card-text">@message.Text</p>
+                        <p class="card-text">@message.Body</p>
                     </div>
                 </div>
             </li>

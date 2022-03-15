@@ -40,5 +40,10 @@ namespace TheBillboard.Controllers
         {
             _logger.LogInformation($"Message received: {message.Title}");
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }

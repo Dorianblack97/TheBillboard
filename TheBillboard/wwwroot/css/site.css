@@ -70,6 +70,10 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
+.form-group {
+    align-items: center;
+}
+
 .list-group{
     align-items: center;
 }

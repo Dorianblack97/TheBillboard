@@ -1,0 +1,15 @@
+﻿@model Message
+@{
+    ViewData["Title"] = "Create Messages";
+}
+<div class="text-center" style="align-content: center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+
+    <form class="card" asp-action="Create" asp-controller="Messages" method="post" style="width: 18rem;">
+        <div class="form-group">
+            <label for="Body">Message</label>
+            <input asp-for="Body" type="text" class="form-control" placeholder="Enter message">
+        </div>
+        <input type="submit" value="Send" class="btn btn-outline-primary" />
+    </form>
+</div>
